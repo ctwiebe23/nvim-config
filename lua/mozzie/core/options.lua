@@ -1,6 +1,3 @@
--- colorscheme
-vim.cmd 'colorscheme tokyonight'
-
 -- tab
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -9,7 +6,7 @@ vim.opt.shiftwidth = 2
 
 -- autopairs
 require('nvim-autopairs').setup({
-  enable_check_bracket_line = false, 
+  enable_check_bracket_line = false,
 })
 
 -- section-wordcount
@@ -28,3 +25,31 @@ require('nvim-autopairs').setup({
 --    end,
 --  }
 --)
+
+-- better-white-space
+vim.g.better_whitespace_guicolor = '#ffa07a'
+vim.g.better_whitespace_filetypes_blacklist={}
+
+-- configure kanagawa
+require('kanagawa').setup({
+  commentStyle = { italic = true },
+  functionStyle = {},
+  keywordStyle = { italic = true},
+  statementStyle = { bold = true },
+  typeStyle = {},
+  colors = {
+    palette = {},
+    theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+  },
+  overrides = function(colors)  -- add/modify highlights
+    return {}
+  end,
+  theme = "wave",  -- default when `background` isn't set
+  background = {
+    dark = "wave",  -- options: wave, lotus, dragon
+    light = "lotus"
+  },
+})
+
+-- colorscheme
+vim.cmd 'colorscheme kanagawa'  -- options: tokyonight, kanagawa
