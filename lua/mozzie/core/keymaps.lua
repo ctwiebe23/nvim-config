@@ -14,3 +14,6 @@ end
 -- auto-complete
 auto_complete_keymap('i', '<m-j>', '<c-n>')
 auto_complete_keymap('i', '<m-k>', '<c-p>')
+
+-- follow-md-links
+vim.keymap.set('n', '<bs>', ':edit #<cr>', { silent = true })
