@@ -52,4 +52,4 @@ require('kanagawa').setup({
 })
 
 -- colorscheme
-vim.cmd 'colorscheme kanagawa'  -- options: tokyonight, kanagawa
+vim.cmd 'colorscheme tokyonight'  -- options: tokyonight, kanagawa
