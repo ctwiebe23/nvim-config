@@ -1,16 +1,9 @@
 -- keymaps
-vim.keymap.set('i', '<m-q>', '<esc>', { silent = true })
-
--- auto-complete
-local auto_complete_keymap = function(mode, new, old)
-  vim.keymap.set(mode, new, function()
-    if vim.fn.pumvisible() == 1 then return old end
-    return new
-  end, { expr = true })
-end
-
-auto_complete_keymap('i', '<m-j>', '<c-n>')
-auto_complete_keymap('i', '<m-k>', '<c-p>')
+vim.keymap.set({'i','n','c','v','t'}, '<m-q>', '<esc>', { silent = true })
+vim.keymap.set({'i','n','c','v','t'}, '<m-h>', '<left>', { silent = true })
+vim.keymap.set({'i','n','c','v','t'}, '<m-j>', '<down>', { silent = true })
+vim.keymap.set({'i','n','c','v','t'}, '<m-k>', '<up>', { silent = true })
+vim.keymap.set({'i','n','c','v','t'}, '<m-l>', '<right>', { silent = true })
 
 -- follow-md-links
 vim.keymap.set('n', '<bs>', ':edit #<cr>', { silent = true })
