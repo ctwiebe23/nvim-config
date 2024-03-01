@@ -1,4 +1,5 @@
 -- keymaps
+vim.keymap.set('i', '<m-q>', '<esc>', { silent = true })
 
 -- auto-complete
 local auto_complete_keymap = function(mode, new, old)
