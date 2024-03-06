@@ -4,6 +4,9 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 
+-- ruler
+vim.opt.colorcolumn = "80"
+
 -- autopairs
 require('nvim-autopairs').setup({
   enable_check_bracket_line = false,

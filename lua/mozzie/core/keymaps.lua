@@ -1,9 +1,20 @@
 -- keymaps
+
+-- general
 vim.keymap.set({'i','n','c','v','t'}, '<m-q>', '<esc>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-h>', '<left>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-j>', '<down>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-k>', '<up>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-l>', '<right>', { silent = true })
+
+-- spellcheck
+vim.keymap.set('n', '<m-s>', function()
+  vim.opt.spell = not(vim.opt.spell:get())
+end, { silent = true })
+
+-- clojure
+vim.keymap.set('n', '<m-c>', ':!cljfmt check %<cr>', { silent = true })
+vim.keymap.set('n', '<m-v>', ':!cljfmt fix %<cr>', { silent = true })
 
 -- auto-complete
 local auto_complete_keymap = function(mode, new, old)
