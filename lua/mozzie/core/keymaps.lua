@@ -13,8 +13,8 @@ vim.keymap.set('n', '<m-s>', function()
 end, { silent = true })
 
 -- clojure
-vim.keymap.set('n', '<m-c>', ':!cljfmt check %<cr>', { silent = true })
-vim.keymap.set('n', '<m-v>', ':!cljfmt fix %<cr>', { silent = true })
+vim.keymap.set('n', '<m-c>', ':w<cr>:!cljfmt check %<cr>', { silent = true })
+vim.keymap.set('n', '<m-v>', ':w<cr>:!cljfmt fix %<cr>', { silent = true })
 
 -- auto-complete
 local auto_complete_keymap = function(mode, new, old)
