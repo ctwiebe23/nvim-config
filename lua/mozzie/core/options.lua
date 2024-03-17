@@ -4,8 +4,9 @@ vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 2
 
--- ruler
+-- ruler and linecount
 vim.opt.colorcolumn = "80"
+vim.opt.relativenumber = true
 
 -- autopairs
 require('nvim-autopairs').setup({
@@ -55,4 +56,4 @@ require('kanagawa').setup({
 })
 
 -- colorscheme
-vim.cmd 'colorscheme tokyonight'  -- options: tokyonight, kanagawa
+vim.cmd 'colorscheme kanagawa'  -- options: tokyonight, kanagawa
