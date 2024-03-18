@@ -36,7 +36,7 @@ vim.g.better_whitespace_filetypes_blacklist={}
 
 -- configure kanagawa
 require('kanagawa').setup({
-  commentStyle = { italic = true },
+  commentStyle = { italic = false },
   functionStyle = {},
   keywordStyle = { italic = true},
   statementStyle = { bold = true },
