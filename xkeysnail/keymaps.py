@@ -11,9 +11,9 @@ define_keymap(
     re.compile("Firefox"),
     {
         K("C-l"): K("C-TAB"),
-        K("C-h"): K("C-Shift-TAB"),
-        K("C-j"): K("page_down"),
-        K("C-k"): K("page_up"),
+        K("C-h"): K("C-SHIFT-TAB"),
+        K("C-j"): K("PAGE_DOWN"),
+        K("C-k"): K("PAGE_UP"),
     },
     "Firefox",
 )
@@ -21,12 +21,12 @@ define_keymap(
 define_keymap(
     lambda window : window not in ("Firefox"),
     {
-        K("M-h"): K("left"),
-        K("M-j"): K("down"),
-        K("M-k"): K("up"),
-        K("M-l"): K("right"),
-        K("M-q"): K("esc"),
-        K("M-BACKSPACE"): K("delete"),
+        K("M-h"): K("LEFT"),
+        K("M-j"): K("DOWN"),
+        K("M-k"): K("UP"),
+        K("M-l"): K("RIGHT"),
+        K("M-q"): K("ESC"),
+        K("M-BACKSPACE"): K("DELETE"),
     },
     "Navigation & Utility",
 )
