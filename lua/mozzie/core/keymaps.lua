@@ -16,6 +16,9 @@ end, { silent = true })
 vim.keymap.set('n', '<m-c>', ':w<cr>:!cljfmt check %<cr>', { silent = true })
 vim.keymap.set('n', '<m-v>', ':w<cr>:!cljfmt fix %<cr>', { silent = true })
 
+-- LaTeX
+vim.keymap.set('n', '<m-p>', ':w<cr>:!pdflatex %<cr>', { silent = true })
+
 -- auto-complete
 local auto_complete_keymap = function(mode, new, old)
   vim.keymap.set(mode, new, function()
@@ -24,6 +27,8 @@ local auto_complete_keymap = function(mode, new, old)
   end, { expr = true })
 end
 
+auto_complete_keymap('i', '<down>', '<c-n>')
+auto_complete_keymap('i', '<up>', '<c-p>')
 auto_complete_keymap('i', '<m-j>', '<c-n>')
 auto_complete_keymap('i', '<m-k>', '<c-p>')
 
