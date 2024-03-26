@@ -11,7 +11,7 @@ define_keymap(
     re.compile("Firefox"),
     {
         K("C-l"): K("C-TAB"),
-        K("C-h"): K("C-SHIFT-TAB"),
+        K("C-h"): K("C-Shift-TAB"),
         K("C-j"): K("PAGE_DOWN"),
         K("C-k"): K("PAGE_UP"),
     },
