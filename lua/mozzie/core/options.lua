@@ -55,5 +55,49 @@ require('kanagawa').setup({
   },
 })
 
+-- configure nightfox
+require('nightfox').setup({
+  options = {
+    styles = {
+      comments = "NONE",
+      conditionals = "NONE",
+      constants = "NONE",
+      functions = "NONE",
+      keywords = "italic",
+      numbers = "NONE",
+      operators = "NONE",
+      strings = "NONE",
+      types = "bold",
+      variables = "NONE",
+    }
+  }
+})
+
+-- configure catppuccin
+require('catppuccin').setup({
+  flavour = 'mocha', -- frappe, macchiato, mocha
+  styles = {
+    comments = {},
+    conditionals = {},
+    loops = {},
+    functions = {},
+    keywords = { "italic" },
+    strings = {},
+    variables = {},
+    numbers = {},
+    booleans = {},
+    properties = {},
+    types = { "bold" },
+    operators = {},
+  }
+})
+
 -- colorscheme
-vim.cmd 'colorscheme kanagawa'  -- options: tokyonight, kanagawa
+-- options:
+-- - tokyonight
+-- - kanagawa
+-- - nightfox
+--   - nordfox
+--   - carbonfox
+-- - catppuccin
+vim.cmd 'colorscheme catppuccin'
