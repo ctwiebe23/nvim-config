@@ -6,7 +6,7 @@ vim.opt.shiftwidth = 2
 
 -- ruler and linecount
 vim.opt.colorcolumn = "80"
-vim.opt.relativenumber = true
+vim.opt.number = true
 
 -- autopairs
 require('nvim-autopairs').setup({
