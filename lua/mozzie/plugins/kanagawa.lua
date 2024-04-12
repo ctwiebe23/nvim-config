@@ -4,8 +4,8 @@ return {
     commentStyle = { italic = false },
     functionStyle = {},
     keywordStyle = { italic = true},
-    statementStyle = { bold = true },
-    typeStyle = {},
+    statementStyle = { bold = false },
+    typeStyle = { bold = true },
     colors = {
       palette = {},
       theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
