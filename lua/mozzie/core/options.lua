@@ -7,6 +7,7 @@ vim.opt.shiftwidth = 2
 -- ruler and linecount
 vim.opt.colorcolumn = "80"
 vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- better-white-space
 vim.g.better_whitespace_guicolor = '#ffa07a'
