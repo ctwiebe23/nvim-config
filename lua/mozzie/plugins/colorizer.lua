@@ -4,6 +4,11 @@ return {
     vim.o.termguicolors = true
     local colorizer = require("colorizer")
 
-    colorizer.setup()
+    colorizer.setup({
+      '*',  -- match every filetype
+    },
+    {
+      names = false,  -- don't highlight color names like "Blue"
+    })
   end,
 }
