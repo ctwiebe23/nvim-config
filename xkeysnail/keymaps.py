@@ -21,7 +21,7 @@ define_keymap(
 )
 
 define_keymap(
-    lambda window : window not in ("Firefox"),
+    lambda window : window != "Firefox",
     {
         K("M-h"): K("LEFT"),
         K("M-j"): K("DOWN"),
