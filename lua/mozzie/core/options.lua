@@ -28,4 +28,5 @@ vim.g.rainbow = {
 --   - nordfox
 --   - carbonfox
 -- - catppuccin
-vim.cmd 'colorscheme kanagawa'
+-- - gruvbox
+vim.cmd 'colorscheme gruvbox'
