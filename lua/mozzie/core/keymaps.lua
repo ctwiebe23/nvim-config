@@ -6,7 +6,7 @@ vim.keymap.set({'i','n','c','v','t'}, '<m-h>', '<left>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-j>', '<down>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-k>', '<up>', { silent = true })
 vim.keymap.set({'i','n','c','v','t'}, '<m-l>', '<right>', { silent = true })
-vim.keymap.set('n', '<m-t>', ':terminal<cr>', { silent = true })
+vim.keymap.set('n', '<m-t>', ':w<cr>:terminal<cr>', { silent = true })
 
 -- spellcheck
 vim.keymap.set('n', '<m-s>', function()

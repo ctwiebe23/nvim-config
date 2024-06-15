@@ -10,11 +10,11 @@ define_modmap({
 define_keymap(
     re.compile("Firefox"),
     {
-        K("C-l"): K("C-TAB"),
-        K("C-h"): K("C-Shift-TAB"),
-        K("C-j"): K("PAGE_DOWN"),
+        K("C-l"):       K("C-TAB"),
+        K("C-h"):       K("C-Shift-TAB"),
+        K("C-j"):       K("PAGE_DOWN"),
         K("C-Shift-j"): K("DOWN"),
-        K("C-k"): K("PAGE_UP"),
+        K("C-k"):       K("PAGE_UP"),
         K("C-Shift-k"): K("UP"),
     },
     "Firefox",
@@ -23,11 +23,11 @@ define_keymap(
 define_keymap(
     lambda window : window != "Firefox",
     {
-        K("M-h"): K("LEFT"),
-        K("M-j"): K("DOWN"),
-        K("M-k"): K("UP"),
-        K("M-l"): K("RIGHT"),
-        K("M-q"): K("ESC"),
+        K("M-h"):         K("LEFT"),
+        K("M-j"):         K("DOWN"),
+        K("M-k"):         K("UP"),
+        K("M-l"):         K("RIGHT"),
+        K("M-q"):         K("ESC"),
         K("M-BACKSPACE"): K("DELETE"),
     },
     "Navigation & Utility",
