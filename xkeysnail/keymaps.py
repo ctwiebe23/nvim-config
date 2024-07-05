@@ -12,9 +12,7 @@ define_keymap(
     {
         K("C-l"):       K("C-TAB"),
         K("C-h"):       K("C-Shift-TAB"),
-        K("C-j"):       K("PAGE_DOWN"),
         K("C-Shift-j"): K("DOWN"),
-        K("C-k"):       K("PAGE_UP"),
         K("C-Shift-k"): K("UP"),
     },
     "Firefox",
