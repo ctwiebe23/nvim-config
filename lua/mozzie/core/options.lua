@@ -1,8 +1,8 @@
 -- tab
-vim.opt.tabstop = 8
-vim.opt.softtabstop = 8
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 8
+vim.opt.shiftwidth = 2
 
 -- ruler and linecount
 vim.opt.colorcolumn = "80"
