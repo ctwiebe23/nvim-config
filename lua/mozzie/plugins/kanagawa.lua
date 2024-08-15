@@ -1,7 +1,7 @@
 return {
   'rebelot/kanagawa.nvim',
   opts = {
-    commentStyle = { italic = false },
+    commentStyle = { italic = true },
     functionStyle = {},
     keywordStyle = { italic = true},
     statementStyle = { bold = false },
