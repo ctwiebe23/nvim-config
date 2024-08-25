@@ -1,7 +1,7 @@
 -- tab
-vim.opt.softtabstop = 2
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 4
 
 -- ruler and linecount
 vim.opt.colorcolumn = "80"
