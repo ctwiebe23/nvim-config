@@ -39,3 +39,6 @@ vim.keymap.set('n', '<bs>', ':edit #<cr>', { silent = true })
 -- fzf
 vim.keymap.set('n', '<m-f>', ':Files<cr>', { silent = true })
 vim.keymap.set('n', '<m-b>', ':Buffers<cr>', { silent = true })
+
+-- disable ALE syntax highlighting
+vim.keymap.set('n', '<m-d>', ':ALEDisable<cr>', { silent = true })
