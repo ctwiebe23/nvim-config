@@ -27,6 +27,7 @@ define_keymap(
         K("M-l"):         K("RIGHT"),
         K("M-q"):         K("ESC"),
         K("M-BACKSPACE"): K("DELETE"),
+        K("M-SPACE"):     K("ENTER"),
     },
     "Navigation & Utility",
 )
