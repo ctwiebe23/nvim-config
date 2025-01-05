@@ -8,7 +8,7 @@ define_modmap({
 })
 
 define_keymap(
-    re.compile("Firefox"),
+    re.compile("firefox-esr"),
     {
         K("C-l"):       K("C-TAB"),
         K("C-h"):       K("C-Shift-TAB"),
@@ -19,7 +19,7 @@ define_keymap(
 )
 
 define_keymap(
-    lambda window : window != "Firefox",
+    lambda wm_class : wm_class not in ("firefox-esr"),
     {
         K("M-h"):         K("LEFT"),
         K("M-j"):         K("DOWN"),
