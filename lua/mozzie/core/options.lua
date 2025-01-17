@@ -22,6 +22,8 @@ vim.g.rainbow = {
 -- treesitter
 -- vim.treesitter.language.register('html', 'xhtml');
 vim.cmd('autocmd BufRead,BufNewFile *.xhtml set filetype=html')
+vim.cmd('autocmd BufRead,BufNewFile *.php set filetype=html')
+vim.cmd('autocmd BufRead,BufNewFile *.inc.php set filetype=php')
 
 -- colorscheme
 -- options:
