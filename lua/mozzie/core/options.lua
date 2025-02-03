@@ -33,4 +33,4 @@ vim.cmd('autocmd BufRead,BufNewFile *.inc.php set filetype=php')
 --   - nordfox
 --   - carbonfox
 -- - gruvbox
-vim.cmd 'colorscheme gruvbox'
+vim.cmd 'colorscheme kanagawa'
