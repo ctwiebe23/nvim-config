@@ -24,6 +24,7 @@ vim.g.rainbow = {
 vim.cmd('autocmd BufRead,BufNewFile *.xhtml set filetype=html')
 vim.cmd('autocmd BufRead,BufNewFile *.php set filetype=html')
 vim.cmd('autocmd BufRead,BufNewFile *.inc.php set filetype=php')
+vim.cmd('autocmd BufRead,BufNewFile *.wat set filetype=wast')
 
 -- colorscheme
 -- options:
