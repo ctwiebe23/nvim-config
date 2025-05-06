@@ -12,12 +12,12 @@ vim.opt.relativenumber = true
 vim.g.better_whitespace_guicolor = '#ffa07a'
 vim.g.better_whitespace_filetypes_blacklist={}
 
-local rainbow = require 'rainbow-delimiters'
-vim.g.rainbow = {
-  strategy = {
-    [''] = rainbow.strategy['local'],
-  },
-}
+-- local rainbow = require 'rainbow-delimiters'
+-- vim.g.rainbow = {
+--   strategy = {
+--     [''] = rainbow.strategy['local'],
+--   },
+-- }
 
 -- treesitter
 -- vim.treesitter.language.register('html', 'xhtml');
