@@ -27,6 +27,7 @@ vim.cmd('autocmd BufRead,BufNewFile *.inc.php set filetype=html')
 vim.cmd('autocmd BufRead,BufNewFile *.wat set filetype=wast')
 vim.cmd('autocmd BufNewFile,BufRead *.cshtml set filetype=html')
 vim.cmd('autocmd BufNewFile,BufRead *.razor set filetype=html')
+vim.cmd('autocmd BufNewFile,BufRead justfile set filetype=make')
 
 -- colorscheme
 -- options:
