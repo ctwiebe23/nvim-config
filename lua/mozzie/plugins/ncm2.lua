@@ -12,6 +12,14 @@ return {
       })
     end,
   },
-  { 'ncm2/ncm2-bufword' },
-  { 'ncm2/ncm2-path' },
+  { 'ncm2/ncm2-bufword' },  -- Words in curr buf
+  { 'ncm2/ncm2-path' },  -- Paths
+  { 'ncm2/ncm2-cssomni' },  -- CSS
+  { 'Shougo/neco-syntax' },  -- General Syntax
+  -- These all get hit by "Job is dead":
+  -- { 'ncm2/ncm2-racer' },  -- Rust
+  -- { 'ncm2/ncm2-pyclang' },  -- C/++
+  -- { 'ncm2/ncm2-jedi' },  -- Python
+  -- { 'ncm2/ncm2-tern' },  -- JavaScript
+  -- { 'ncm2/ncm2-neoinclude' },  -- Includes/Imports
 }
